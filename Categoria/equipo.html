@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- -------------META DATOS Y REFERENCIAS DE BOOSTRAP-CSS-JAVASCRIPT---------------- -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filosofia Moderna | Equipo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="../css/equipo.css" rel="stylesheet" type="text/css" />
+  <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+</head>
+<!-- ------------------------------------DETALLES GENERALES-------------------------------- -->
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Filosofia Moderna
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="corrientes.html">Corrientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#OffCanvasHistoria" aria-current="page"
+              href="#OffCanvasHistoria">Historia</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filosofia Moderna
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#OffCanvasContexto"
+                  aria-controls="OffCanvasContexto">Contexto histórico</a></li>
+              <li><a class="dropdown-item" href="personajes_filosofia.html">Principales filósofos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#OffCanvasKant"
+                  href="#OffCanvasKant">Crítica de la razón pura de Kant.</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipo.html">Equipo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!----------------------------------------------------------->
+  <!-----------------------OFF CANVAS--------------------------->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="OffCanvasContexto" aria-labelledby="OffCanvasContextoLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="OffCanvasContextoLabel">Contexto Historico</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row row-cols-1 row-cols-md-1 g-4">
+        <div class="col">
+          <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#HumanismoModal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjA97bD7xOqzRDcViUIOPTw4h5sFfYXi_yOw&s"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Humanismo</h5>
+              <p class="card-text">Humanismo es un concepto polisémico que se aplica tanto al estudio de las letras
+                humanas, los estudios clásicos y la filología grecorromana.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#RupturaModal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0SaQfgxjNsZ92OfHdQmot6gPeY6rEP_KaJQ&s"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ruptura con la escolástica</h5>
+              <p class="card-text">Ruptura con la escolástica” es un ensayo de Jaime Labastida, filósofo y poeta
+                mexicano, que analiza el trabajo de Agustín Rivera y Sanromán</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#MetodoCientificoModal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Galilei-weltsysteme_1-621x854.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Metodo Cientifico</h5>
+              <p class="card-text">El método científico se utilizó por primera vez durante la llamada «Revolución
+                Científica»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------MODALS------------------------------------------>
+  <div class="modal fade" id="HumanismoModal" tabindex="-1" aria-labelledby="HumanismoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <h1 class="modal-title fs-5" id="HumanismoModalLabel">Humanismo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">
+            Humanismo es un concepto polisémico que se aplica tanto al estudio de las letras humanas, los estudios
+            clásicos y la filología grecorromana.
+          </p>
+          <hr class="border border-primary border-1 opacity-75">
+          <p>Por otro lado, también se denomina humanismo al «sistema de creencias centrado en el principio de que las
+            necesidades de la sensibilidad y de la inteligencia humana pueden satisfacerse sin tener que aceptar la
+            existencia de Dios y la predicación de las religiones
+          </p>
+          <figure class="figure">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/HumanismSymbol.svg/146px-HumanismSymbol.svg.png"
+              class="figure-img img-fluid rounded" alt="Empirismo">
+            <figcaption class="figure-caption">El Humano feliz (Happy Human) es un icono que se ha adoptado como símbolo
+              internacional del humanismo secular.</figcaption>
+          </figure>
+          <p class="pt-1">
+            El humanismo es, en resumen, un componente de una gran variedad de sistemas filosóficos más específicos y de
+            varias escuelas de pensamiento religioso.
+          <p>
+            Mucho antes de ser ampliamente empleado en términos políticos, el
+            humanismo es un concepto propio de la historia de la filosofía, renovada con el Renacimiento, asociado en
+            particular con el movimiento representado por Erasmo, Michel de Montaigne o incluso por Guillaume Budé, a
+            quienes corresponde el honor de haberse interesado a la vez por la literatura de la antigüedad grecolatina y
+            la reflexión personal.
+          </p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!---------------------------------------MODALS 2------------------------------------------>
+  <div class="modal fade" id="RupturaModal" tabindex="-1" aria-labelledby="RupturaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <h1 class="modal-title fs-5" id="RupturaModalLabel">Ruptura con la escolástica</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">
+            Ruptura con la escolástica” es un ensayo de Jaime Labastida, filósofo y poeta mexicano, que analiza el
+            trabajo de Agustín Rivera y Sanromán
+          </p>
+          <hr class="border border-primary border-1 opacity-75">
+          <p>En este ensayo, Labastida destaca que los juicios críticos de Rivera y Sanromán se basan en documentos
+            históricos.
+          </p>
+          <figure class="figure">
+            <img src="https://academia.org.mx/templates/yootheme/cache/66/jaime_labastida-66fe44a8.webp"
+              class="figure-img img-fluid rounded" alt="Empirismo">
+            <figcaption class="figure-caption">Jaime Labastida.</figcaption>
+          </figure>
+          <p class="pt-1">
+            Subraya que los autores que pusieron en relieve el atraso de la Nueva España en asuntos de ciencia y
+            filosofía seguían el método escolástico tradicional.
+          <p>
+            Señala que estos autores empleaban el silogismo como procedimiento de demostración, ignoraban el método
+            experimental en física y medicina.
+          </p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!----------------------------------------MODALS 3------------------------------------------->
+  <div class="modal fade" id="OffCanvasHistoria" tabindex="-1" aria-labelledby="OffCanvasHistoriaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <h1 class="modal-title fs-5" id="OffCanvasHistoriaLabel">Historia (Linea del tiempo)</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <figure class="figure">
+            <img src="../Assets/Linea_Del_Tiempo.jpg" class="figure-img img-fluid rounded" alt="Linea del tiempo">
+            <figcaption class="figure-caption">Linea del tiempo</figcaption>
+          </figure>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-----------------------------------------MODALS 4--------------------------------------------->
+  <div class="modal fade" id="OffCanvasKant" tabindex="-1" aria-labelledby="OffCanvasKantLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <h1 class="modal-title fs-5" id="OffCanvasKantLabel">Crítica de la razón pura de Kant</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">
+            La Crítica de la razón pura (en alemán: Kritik der reinen Vernunft) es la obra principal del filósofo prusiano
+            Immanuel Kant.
+          </p>
+          <hr class="border border-primary border-1 opacity-75">
+          <p> Se trata de una indagación trascendental acerca de las condiciones epistémicas del conocer humano (la
+            situación y
+            capacidad de los humanos para conocer asuntos de diverso tipo), cuyo objetivo central es lograr una respuesta
+            definitiva
+            sobre si la metafísica puede ser considerada una ciencia.
+          </p>
+          <figure class="figure">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Kant-KdrV-1781.png/220px-Kant-KdrV-1781.png"
+              class="figure-img img-fluid rounded" alt="Empirismo">
+            <figcaption class="figure-caption">Portada de la primera edición (1781).</figcaption>
+          </figure>
+          <p class="pt-1">
+            En esta obra, Kant intenta la conjunción de racionalismo y empirismo, haciendo una crítica de las dos
+            corrientes
+            filosóficas que se centraban en el objeto como fuente de conocimiento, y así, dando un «giro copernicano» al
+            modo de
+            concebir la filosofía, estudiando el sujeto como la fuente que construye el conocimiento del objeto, a través
+            de la
+            representación que el sujeto, mediante la sensibilidad inherente a su naturaleza, toma del objeto.
+          <p>
+            Entre las resistencias que encontró la obra se puede citar que Pío VIII, antes de llegar a papa católico, como
+            prefecto
+            de la Congregación del Índice prohibió bajo amenaza de excomunión la lectura de la Crítica de la razón pura
+            (decreto del
+            8 de julio de 1827).
+          </p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------MODALS 2------------------------------------------>
+  <div class="modal fade" id="MetodoCientificoModal" tabindex="-1" aria-labelledby="MetodoCientificoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="../favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <h1 class="modal-title fs-5" id="MetodoCientificoModalLabel">Metodo Cientifico</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">
+            El método científico se utilizó por primera vez durante la llamada «Revolución Científica»
+          </p>
+          <hr class="border border-primary border-1 opacity-75">
+          <p> El método combinaba conocimientos teóricos como las matemáticas con la experimentación práctica mediante
+            instrumentos científicos, análisis y comparaciones de resultados
+          </p>
+          <figure class="figure">
+            <img src="https://www.worldhistory.org/img/r/p/1000x1200/18106.png.webp?v=1725399185-1699026281"
+              class="figure-img img-fluid rounded" alt="Empirismo">
+            <figcaption class="figure-caption">Experimento de la bomba de aire de Hooke y Boyle</figcaption>
+          </figure>
+          <p class="pt-1">
+            El objetivo de este método científico era no solo aumentar el conocimiento humano, sino hacerlo de forma que
+            beneficiara prácticamente a todos y mejorara la condición humana.
+          <p>
+            Los pensadores siempre habían realizado experimentos, desde figuras antiguas como Arquímedes (287-212 a.C.)
+            hasta los alquimistas de la Edad Media, pero sus experimentos solían ser fortuitos y muy a menudo los
+            pensadores intentaban demostrar una idea preconcebida.
+          </p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!----------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------------------------------------->
+  <section class="pt-5">
+   <div class="container text-center ">
+    <h2>Nuestro Equipo</h2>
+    <div class="miembros-equipo">
+      <div class="miembro">
+        <img src="../Assets/Alan_Icon.jpg">
+        <h3>Santiago Sánchez</h3>
+        <p class="rol">Diseñadora UX/UI</p>
+        <p>Responsable de la experiencia de usuario y diseño visual</p>
+        <div class="redes-sociales">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="miembro">
+        <img src="../Assets/Diego_Icon.jpg">
+        <h3>Diego Torres</h3>
+        <p class="rol">Investigador</p>
+        <p>Especialista en filosofía antigua y medieval</p>
+        <div class="redes-sociales">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="miembro">
+        <img src="../Assets/Alan_Icon.jpg">
+        <h3>Alan Quevedo</h3>
+        <p class="rol">Gestora de Proyecto</p>
+        <p>Coordinación general y documentación</p>
+        <div class="redes-sociales">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <footer>
+      <p>© 2025 Equipo Filosofía Moderna. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
